@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duc Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/be4e442cfa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <div class="menu-list"><li><a href="#header">Home</a></li></div>
+                    <div class="menu-list"><li><a href="#about">About</a></li></div>
+                    <div class="menu-list"><li><a href="#projects">Projects</a></li></div>
+                    <div class="menu-list"><li><a href="#contact">Contact</a></li></div>
+                    <i class="fa-solid fa-angles-right" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <div class="boo"><h2>Computer Science student</h2></div>
+                <h1>Hi, I'm <span>Duc Tran</span> <br>from Fitchburg State <br>University</h1>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------About---------------------------------     -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        In this video we will create a personal portfolio 
+                        website design step by step using HTML CSS and JavaScript. 
+                        You can use this website to make your online resume or CV. 
+                        In this website design we will add name, designation of 
+                        the user. Then we will display the image, skills, 
+                        work experience and education details. We will also 
+                        add the list of services and work portfolio on this website. 
+                        In the footer of this website we will add contact info and contact form. 
+                        Your can receive the contact form data on your google sheets.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('myProjects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('courses')">Courses</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML, CSS, JavaScript</span><br>Using efficiently</li>
+                            <li><span>Github</span><br>Familiar</li>
+                            <li><span>HTML, CSS, JavaScript</span><br>Using efficiently</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="myProjects">
+                        <ul>
+                            <li><span>HTML, CSS, JavaScript</span><br>Using efficiently</li>
+                            <li><span>Github</span><br>Familiar</li>
+                            <li><span>HTML, CSS, JavaScript</span><br>Using efficiently</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="courses">
+                        <ul>
+                            <li><span>JavaScript Basics</span><br>Using efficiently</li>
+                            <li><span>Algorithms & Data Structures</span><br>Familiar</li>
+                            <li><span>Systems Programming</span><br>Using efficiently</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------portfolio---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/pic1.jpg" alt="">
+                <div class="layer">
+                    <h3>Responsive Portfolio Webpage</h3>
+                    <p>A webpage playing music.</p>
+                    <a href="/images/Duc resume.pdf"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music Player Webpage</h3>
+                    <p>A webpage playing music.</p>
+                    <a href="https://github.com/thienduchuutran/music_player_project.git"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Form Validation</h3>
+                    <p>Signing up feature.</p>
+                    <a href="https://github.com/thienduchuutran/FORM_VALIDATION_FEATURE.git"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div href="#" class="btn">See more</div>
+    </div>
+</div>
+
+    <!-- -----------------------------projects ------------------------ -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Certifications</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Responsive Personal Webpage</h2>
+                    <p>My portfolio but a webpage.</p>
+                    <a href="/images/Duc resume.pdf">Get PDF version here</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-headphones-simple"></i>
+                    <h2>Music Player Webpage</h2>
+                    <p>A webpage playing music.</p>
+                    <a href="https://github.com/thienduchuutran/music_player_project.git">See the source code</a>
+                </div>
+
+                <div>
+                    <i class="fa-regular fa-square-check"></i>
+                    <h2>Form Validation</h2>
+                    <p>Signing up feature.</p>
+                    <a href="https://github.com/thienduchuutran/FORM_VALIDATION_FEATURE.git">See the source code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- -----------contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope-open"></i>thienductranhuu2784@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen-button"></i>+1 (351) 220 0030</p>
+                <div class="social-icon">
+                    <a href="https://github.com/thienduchuutran"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/duc-tran-277564229/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <a href="images/Duc resume.pdf" download class="btn btn2">Download My CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright of Duc. Made for <i class="fa-solid fa-heart"></i> internship application</p>
+    </div>
+</div>
+
+    <script src="responsive.js">
+
+    </script>
+</body>
+</html>
