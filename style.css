@@ -507,6 +507,10 @@ nav .fa-solid{
         margin-right: 0;
     }
 
+    .logo{
+        margin-top: 15px;
+    }
+
     .menu-list{
         line-height: 0;
         height: 0;
