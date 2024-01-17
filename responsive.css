@@ -100,6 +100,7 @@ nav .fa-solid{
     }
 
     #sidemenu .seperate-line{
+        display: block;
         padding: 15px;
         color: rgb(120, 203, 25);
     }

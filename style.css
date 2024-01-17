@@ -47,6 +47,10 @@ img{
     z-index: auto;
 }
 
+#sidemenu .seperate-line{
+    display: none;
+}
+
 .menu-list{
     line-height: 112px;
     height: 112px;

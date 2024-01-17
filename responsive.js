@@ -15,10 +15,17 @@ function opentab(tabname){
 
 }
 
-var sidemenu = document.getElementById("sidemenu")
+var sidemenu = document.getElementById("sidemenu");
+var menuItems = document.querySelectorAll('nav li a[href*="#"]');
 
+for (var i = 0; i < menuItems.length; i++){
+    var menuItem = menuItems[i];
 
-
+    menuItem.onclick = function(){
+        sidemenu.style.right = null;       //here we wanna get only the element we 
+    }                           //click on, if we use menuItem again,             
+}                               //the element we get will be the result after the for loop has run
+                                //which is the last element in the nodeList, that's why we wanna use this
 function openmenu(){
     sidemenu.style.right = "0";
     }
