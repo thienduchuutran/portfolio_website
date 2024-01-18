@@ -431,6 +431,7 @@ nav ul li a:hover{
 .btn.btn2{
     display: inline-block;
     background: #ff004f;
+    cursor: pointer;
 }
 
 .contact-right form{
@@ -449,11 +450,18 @@ form input, form textarea{
     border-radius: 6px;
 }
 
-form btb2{
+form btn2{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+#msg{
+    color: #000;
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .copyright{
@@ -469,8 +477,86 @@ form btb2{
     color: #ff004f;
 }
 
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
 
+.modal.open{
+    display: flex;
+}
 
+.modal-container{
+    background: rgba(0,0,0,0.6);
+    color: #080808;
+    width: 65%;
+    min-height: 200px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.modal-body{
+    height: 150px;
+    min-width: 100%;
+    background-color: rgba(0,0,0,1);
+    color: #fff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.modal-body .fa-solid{
+    font-size: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.modal-body p{
+    font-size: 30px;
+    font-weight: 400;
+    
+}
+
+.modal-close{
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    color: #1ae04c;
+    width: 50%;
+}
+
+.modal-close .fa-solid{
+    font-size: 30px;
+    color: #000;
+    
+}
+
+#modal-close{
+    border-radius: 25px;
+    width: 300%;    
+    font-weight: 900;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background 0.5s, transform 0.5s;
+}
+
+#modal-close:hover{
+    background-color: #FFFCC9 ;
+    color: #FF7779;
+    transform: translateY(-10px);
+}
 /* ------------------css for small screen -------------- */
 
 

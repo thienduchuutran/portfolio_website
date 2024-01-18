@@ -90,6 +90,7 @@ nav .fa-solid{
     }
 
     #sidemenu .menu-list{
+
         line-height: 0;
         height: 0;
         display: inline-block;
@@ -189,5 +190,36 @@ nav .fa-solid{
 
     .btn.btn2{
         display: block;
+    }
+
+    .modal-body{
+        height: 150px;
+        min-width: 100%;
+        background-color: rgba(0,0,0,1);
+        color: #fff;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
+    }
+    
+    .modal-body .fa-solid{
+        font-size: 50px;
+        margin-right: 14px;
+        margin: 5px;
+        margin-left: 10px;
+        position: absolute;
+        top: 5px;
+    }
+    
+    .modal-body p{
+        font-size: 30px;
+        font-weight: 400;
+        position: absolute;
+        bottom: 10px;
+        left: 17%;
+        
     }
 }

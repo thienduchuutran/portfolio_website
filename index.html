@@ -9,7 +9,8 @@
 
     <script src="https://kit.fontawesome.com/be4e442cfa.js" crossorigin="anonymous"></script>
 </head>
-<body> 
+<body>
+<div id="main">    
     <div id="header">
         <div class="container">
             <nav>
@@ -179,15 +180,36 @@
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <em id="msg">After clicking "submit", please wait 4 seconds for the submission to go through </em>
                     <button type="submit" class="btn btn2">Submit</button>
+
                 </form>
-                <span id="msg"></span>
             </div>
 
         </div>
     </div>
     <div class="copyright">
         <p>Copyright of Duc. Made for <i class="fa-solid fa-heart"></i> internship application</p>
+    </div>
+</div>
+</div>
+
+
+<div class="modal"> 
+    <div class="modal-container">
+        <div class="modal-body">
+            <i class="fa-solid fa-plane-circle-check"></i>
+            <p>Message sent successfully !</p>
+        </div>
+
+        <div class="modal-close">
+            <button id="modal-close">
+                OK
+                <i class="fa-solid fa-thumbs-up"></i>   
+            </button>
+        </div>
+
+        
     </div>
 </div>
 
