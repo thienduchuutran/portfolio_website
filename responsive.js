@@ -39,6 +39,45 @@ function closemenu(){
     sidemenu.style.right = "-300px";
 }
 
+const navBar = document.querySelector('nav')
+const logo = document.querySelector('.logo')
+const mobileMenu = navBar.querySelector('.fa-solid')
+
+const navBarHeight = navBar.offsetHeight
+const logoHeight = logo.offsetHeight
+const logoWidth = logo.offsetWidth
+const mobileMenuSize =
+
+
+
+
+
+document.onscroll = function(){
+    
+    const scrollTop = window.scrollY || document.documentElement.scrollTop
+    const adjustedScrollTop = scrollTop / 10
+    // const adjustedScrollTopForLogo = scrollTop / 100
+    const newNavBarHeight = navBarHeight - adjustedScrollTop    
+
+    const newLogoHeight = logoHeight - adjustedScrollTop
+    const newLogoWidth = logoWidth - adjustedScrollTop
+
+    const newMobileMenuSize = mobileMenuSize - adjustedScrollTop
+    
+
+
+
+
+    navBar.style.height = newNavBarHeight + 'px'
+    logo.style.height = newLogoHeight + 'px'
+    logo.style.width = newLogoWidth + 'px'
+    mobileMenu.style.height = newMobileMenuHeight + 'px'
+    mobileMenu.style.width = newMobileMenuWidth + 'px'
+
+
+    // navBar.style.width = newNavBarWidth + 'px'
+
+}
 
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyauCt1gKL72N1NLZLm8jMIBIxnWlc6qVVsKkizVXLN2lCKgHarLgE4wg54IA7HCBqhAg/exec'
