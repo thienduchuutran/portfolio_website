@@ -41,12 +41,15 @@ function closemenu(){
 
 const navBar = document.querySelector('nav')
 const logo = document.querySelector('.logo')
-const mobileMenu = navBar.querySelector('.fa-solid')
+
+const mobileMenu = document.querySelector('.mobileMenu')
+console.log(mobileMenu)
 
 const navBarHeight = navBar.offsetHeight
 const logoHeight = logo.offsetHeight
+
 const logoWidth = logo.offsetWidth
-const mobileMenuSize =
+
 
 
 
@@ -62,20 +65,14 @@ document.onscroll = function(){
     const newLogoHeight = logoHeight - adjustedScrollTop
     const newLogoWidth = logoWidth - adjustedScrollTop
 
-    const newMobileMenuSize = mobileMenuSize - adjustedScrollTop
-    
-
-
-
-
     navBar.style.height = newNavBarHeight + 'px'
     logo.style.height = newLogoHeight + 'px'
     logo.style.width = newLogoWidth + 'px'
-    mobileMenu.style.height = newMobileMenuHeight + 'px'
-    mobileMenu.style.width = newMobileMenuWidth + 'px'
+
+    
+    // mobileMenu.classList.remove("disappear")
 
 
-    // navBar.style.width = newNavBarWidth + 'px'
 
 }
 

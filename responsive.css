@@ -2,11 +2,17 @@
 
 
 
-nav .fa-solid{
+nav .fa-angles-right{
     display: none;
 }
 
 @media only screen and (max-width: 600px){
+
+    
+    .disappear{
+        display: none;
+    }
+
     .margin70{
         margin-top: 70px;
     }
