@@ -20,34 +20,47 @@ nav .fa-angles-right{
     #header{
         background-image: url();
         position: relative;
-        margin-right: -46px;
+        /* margin-right: -46px; */
     }
 
     #header .container{
-        position: absolute;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        /* position: absolute; */
+        width: 114%;
+        /* display: flex; */
+        /* justify-content: center; */
     }
     #header .header-text{
-        margin-top: 100%;
         font-size: 16px;
-        display: block;
-    }
-
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+/* 
     #header .header-text h1{
         font-size: 30px;
         margin: 0 0 0 15%;
         padding: 0 0 0 8.5%;
         margin-top: 20%;
         
-    }
+    } */
 
+    
     #header .header-text h2{
-        font-size: 30px;
-        margin-top: 0px;
-        padding: 0px 10%;
+        color: #000;
+        position: absolute;
+        bottom: 365px;
+        left: 15%;
+
     }
+    
+    .header-text h1{
+        font-size: 30px;
+        margin-top: 20%;
+        padding: 0px 10%;
+        color: #080808;
+    }
+    
 
     nav .fa-solid{
         display: block;
