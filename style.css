@@ -23,7 +23,7 @@ body{
     height: 130vh;
     background-image: url(images/background.jpg);
     background-size: cover;
-    background-color: #fff;
+    /* background-color: #fff; */
     background-position: center;
     transition: 0.2s;
     /* margin-top: -200px; */
