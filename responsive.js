@@ -39,42 +39,42 @@ function closemenu(){
     sidemenu.style.right = "-300px";
 }
 
-const navBar = document.querySelector('nav')
-const logo = document.querySelector('.logo')
 
-const mobileMenu = document.querySelector('.mobileMenu')
-console.log(mobileMenu)
+// const logo = document.querySelector('.logo')
 
-const navBarHeight = navBar.offsetHeight
-const logoHeight = logo.offsetHeight
+// const mobileMenu = document.querySelector('.mobileMenu')
+// console.log(mobileMenu)
 
-const logoWidth = logo.offsetWidth
+// const navBarHeight = navBar.offsetHeight
+// const logoHeight = logo.offsetHeight
 
-
+// const logoWidth = logo.offsetWidth
 
 
 
 
-document.onscroll = function(){
+
+
+// document.onscroll = function(){
     
-    const scrollTop = window.scrollY || document.documentElement.scrollTop
-    const adjustedScrollTop = scrollTop / 10
-    // const adjustedScrollTopForLogo = scrollTop / 100
-    const newNavBarHeight = navBarHeight - adjustedScrollTop    
+//     const scrollTop = window.scrollY || document.documentElement.scrollTop
+//     const adjustedScrollTop = scrollTop / 10
+//     // const adjustedScrollTopForLogo = scrollTop / 100
+//     const newNavBarHeight = navBarHeight - adjustedScrollTop    
 
-    const newLogoHeight = logoHeight - adjustedScrollTop
-    const newLogoWidth = logoWidth - adjustedScrollTop
+//     const newLogoHeight = logoHeight - adjustedScrollTop
+//     const newLogoWidth = logoWidth - adjustedScrollTop
 
-    navBar.style.height = newNavBarHeight + 'px'
-    logo.style.height = newLogoHeight + 'px'
-    logo.style.width = newLogoWidth + 'px'
+//     navBar.style.height = newNavBarHeight + 'px'
+//     logo.style.height = newLogoHeight + 'px'
+//     logo.style.width = newLogoWidth + 'px'
 
     
-    // mobileMenu.classList.remove("disappear")
+//     // mobileMenu.classList.remove("disappear")
 
 
 
-}
+// }
 
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyauCt1gKL72N1NLZLm8jMIBIxnWlc6qVVsKkizVXLN2lCKgHarLgE4wg54IA7HCBqhAg/exec'
@@ -100,15 +100,9 @@ document.onscroll = function(){
   }
 
 
- ScrollTrigger.create({
-    animation: gsap.from(".header-text", {
-        y: "50vh",
-        scale: 6,
-        yPercent: -50,
-    }),
-    scrub: true,
-    trigger: "#about",
-    start: "top bottom",
-    endTrigger: "about",
-    end: "top center"
- });
+window.addEventListener("scroll", function(){
+    var navBar = document.querySelector('nav');
+    navBar.classList.toggle("sticky", window.scrollY > 0);
+
+})
+

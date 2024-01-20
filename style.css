@@ -34,11 +34,11 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap ;
+    /* flex-wrap: wrap ; */
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
     background-color: rgba(0,0,0,0.4);
     z-index: 10;
 }
@@ -58,7 +58,7 @@ nav .fa-bars{
 
 .top-logo{
     width: 210px;
-    margin-left: 24%;
+    margin-left: 11%;
     transform: translateX(-50%);
     padding: 1em;
 }
